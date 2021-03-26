@@ -1,5 +1,5 @@
 const ui = new UI;
-const weather = new OpenWeather('ae28c32e111b8e01b0e41ede4b77ea15');
+const weather = new OpenWeather();
 
 const _osmap = document.querySelector('#osm-map');
 const lmap = new LMap(_osmap);
