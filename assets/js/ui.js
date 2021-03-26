@@ -1,7 +1,7 @@
 class UI {
   constructor () {
     this._mainContainer = document.querySelector('section.container.main');
-    this._weatherRow = document.querySelector('section > div.row.weather');
+    this._weatherRow = document.querySelector('section > div.row');
     this._weatherLoader = document.querySelector('div.card > div.card-body > div.w-loader')
 
     this._weatherMainBlock = document.querySelector('div.card > div.card-body > div.row.w-main');
@@ -11,6 +11,7 @@ class UI {
 
   displayWeatherResults (results) {
     const { main, weather, wind, sys, name } = results;
+
     if (
       typeof main === 'undefined' ||
       typeof weather === 'undefined' ||
@@ -50,9 +51,9 @@ class UI {
     _location.textContent = name;
 
     this._weatherLoader.classList.add('d-none');
-    this._weatherMainBlock.classList.remove('d-none')
-    this._weatherDetailsBlock.classList.remove('d-none')
-    this._weatherLocationBlock.classList.remove('d-none')
+    this._weatherMainBlock.classList.remove('d-none');
+    this._weatherDetailsBlock.classList.remove('d-none');
+    this._weatherLocationBlock.classList.remove('d-none');
   }
 
   displayAlertUnsupported () {

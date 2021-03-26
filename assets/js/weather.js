@@ -5,8 +5,7 @@ class OpenWeather {
     this.iconBaseURI = 'https://openweathermap.org/img/wn';
   }
 
-  async get (location) {
-    let { latitude, longitude } = location;
+  async get (latitude, longitude) {
     latitude = latitude.toString().slice(0, 8)
     longitude = longitude.toString().slice(0, 8);
 
