@@ -1,7 +1,7 @@
 ## WeatherJS
 
-App written in pure **JS (ES6)** to catch your current location and provide some basic weather data about it.\
-You can, also, grab a location from the map on the right, to view the weather conditions from that area.
+App written with vanilla pure **JS (ES6)**. It aims to use your current location to provide some basic weather data about it.\
+You can, also, select a location on the map to view the weather conditions from that area.
 
 Weather API by [OpenWeather](https://openweathermap.org/)\
 Theme by [Bootswatch](https://github.com/thomaspark/bootswatch)
